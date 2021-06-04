@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerFirst {
+  width: 90%;
+  margin: 1.2rem auto;
+}
+
+header {
+  width: 70%;
+  margin: 20px auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.headerFirst {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.headerOne h1 {
+  border: 2px solid navy;
+  border-radius: 7px;
+  background-color: thistle;
+  color: blue;
+  text-shadow: -0.05em -0.05em 0.05em white, 0.03em 0.03em 0.05em purple;
+}
+
+.headerTwo a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.forEng {
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.forEng:before{
+  content: url(usa.png);
+  display: inline;
+}
+
+.forDansk {
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+}
+
+.forDansk:before{
+  content: url(dk.png);
+  display: inline;
+}
+
+header p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.fbImage {
+  position: absolute;
+  background: url(football.jpg) no-repeat center;
+  background-size: cover;
+  width: 63%;
+  height: 120px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+section ul {
+  list-style-position: inside;
+}
+/* For table */
+
+.events {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+.events td, #events th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.events tr:nth-child(even) {
+  background-color: rgb(204, 221, 255);
+}
+.events tr:nth-child(odd) {
+  background-color: rgba(204, 120, 100, 0.4);
+}
+.events tr:hover:not(.firstrow) { 
+  background-color: blue;
+  color: white;
+  opacity: 0.7;
+}
+
+tr.firstrow th {
+  background-color: rgb(204, 255, 221);
+}
+
+/*form */
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+}
+.container h1 {
+  text-align: center;
+  color: rgba(200, 0, 0, 0.8);
+  background: linear-gradient(to right, rgba(0,255,0,1), rgba(0,255,0,0));
+}
+.container p {
+  text-align: center;
+}
+.col1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+input[type=text], input[type=number], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit], input[type=reset] {
+  background-color: lightblue;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  float: right;
+  margin-right: 10px;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #006633;
+}
+label {
+  display: inline-block;
+  padding: 12px 12px 12px 0;
+}
+.oneline li {
+  display: inline;
+}
+.col2 ol {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.se-dig {
+  text-align: center;
+}
+
+@media only screen and (max-width: 580px){
+  header {
+    width: 70%;
+    height: 70px;
+  }
+
+  .camPlane {
+    margin-top: 2rem;
+  }
+  
+  .fbImage {
+    display: none;
+  }
+  
+  .headerFirst {
+    width: 100%;
+    align-items: center;
+  }
+
+  .headerOne h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    display: none;  
+  }
+
+  .events th, .events td{
+    font-size: 11px;
+  }
+
+  .se-dig {
+    margin-top: 1rem;
+  }
+  
+}

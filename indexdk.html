@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>List, Table and Form</title>
+</head>
+<body>
+  <div class="containerFirst">
+    <header>
+      <div class="headerFirst" >
+        <div class="headerOne">
+          <h1>BROTO fodbold-camp 2021!</h1>
+        </div>
+        <div class="headerTwo">
+          <a class="forEng" href="index.html">English</a>
+        </div>
+      </div>
+      <p>Vi er dedikeret til kvalitet og vores mål er altid at give den bedst mulige oplevelse. Campen er tilrettelagt, så du bliver udfordret fysisk, teknisk, taktisk og mentalt - uanset niveau.</p>
+    </header>
+    <section>
+      <div class="fbImage"></div>
+      <div class="camPlane">
+        <h3>Intensive træningspas, med hovedsageligt tekniske aspekter:</h3>
+        <ul>
+          <li>Positionsspil på REBOUNDERS</li>
+          <li>Boldkontrol med BALL CANON</li>
+          <li>Koordination med FITLIGHT</li>
+          <li>Afslutninger i GOAL TARGET</li>
+        </ul>
+      </div>
+    </section><br>
+    <!-- for table -->
+    <table class="events">
+      <tr class="firstrow">
+        <th></th>
+        <th>København</th>
+        <th>Roskilde</th>
+        <th>Aarhus</th>
+      </tr>
+      <tr>
+        <th>Positionsspil på REBOUNDERS
+        </th>
+        <td>Sun. 3 Jan 2021<br>3pm-5pm</td>
+        <td>Sat. 9 Jan 2021<br>3pm-5pm</td>
+        <td>Fri. 8 Jan 2021<br>3pm-5pm</td>
+      </tr>
+      <tr>
+        <th>Boldkontrol med BALL CANON</th>
+        <td>Sat. 9 Jan 2021<br>9am-11am</td>
+        <td rowspan="2" style="text-align: center;">Sun. 10 Jan 2021<br>9am-11am</td>
+        <td>Sun. 17 Jan 2021<br>9am-11am</td>
+      </tr>
+      <tr>
+        <th>Koordination med FITLIGHT</th>
+        <td>Sat. 17 Jan 2021<br>3pm-5pm</td>
+        <td>Fri. 16 Jan 2021<br>3pm-5pm</td>
+      </tr>
+      <tr>
+        <th>Afslutninger i GOAL TARGET</th>
+        <td>Sun. 18 Jan 2021<br>3pm-5pm</td>
+        <td>Sun. 10 Jan 2021<br>3pm-5pm</td>
+        <td>Sun. 17 Jan 2021<br>3pm-5pm</td>
+      </tr>
+    </table>
+    <!-- for form -->
+    <div class="container">
+      <h1>Tilmeld dig BROTO fodbold-camp!</h1>
+      <p>Du kan tilmelde dig BROTO fodbold-camp via nedenstående knap.<br>Program, praktisk info samt pakkeliste sender vi til dig efter din tilmelding.</p>
+      <form action="">
+        <div class="row">
+          <div class="col1">
+            <label for="fname">Fornavn</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="fname" name="firstname" placeholder="Dit fornavn..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="lname">Efternavn</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="age">Hvor gammel er du?</label>
+          </div>
+          <div class="col2">
+            <ol class="oneline">
+              <li><input type="radio" id="age" name="year" value="under12" checked> under 11 år</li>
+              <li><input type="radio" id="age" name="year" value="12 to 15">11 til 12</li>
+              <li><input type="radio" id="age" name="year" value="16 to 18">13 til 15</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="email" name="email" placeholder="Din email...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="phone">Telefonnummer</label>
+          </div>
+          <div class="col2">
+            <input type="number" id="phone" name="phone" placeholder="Dit telefonnummer..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="city">Find fodboldcamp nær dig:</label>
+          </div>
+          <div class="col2">
+            <select name="city" id="city">
+              <option value="copenhagen">København</option>
+              <option value="roskilde">Roskilde</option>
+              <option value="aarhus">Aarhus</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="pickdate">Startdato og -tid</label>
+          </div>
+          <div class="col2">
+            <input type="datetime-local" id="pickdate" name="pickdate" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="message">Kommentar</label>
+          </div>
+          <div class="col2">
+            <textarea name="message" id="message" placeholder="Skriv noget her..." style="height: 200px;"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Insend">
+          <input type="reset" value="Nulstil">
+        </div>
+        <h3 class="se-dig">Vi glæder os til at se dig til årets fedeste camp!</h3>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>List, Table and Form</title>
+</head>
+<body>
+  <div class="containerFirst">
+    <header>
+      <div class="headerFirst" >
+        <div class="headerOne">
+          <h1>BROTO Football-camp2021!</h1>
+        </div>
+        <div class="headerTwo">
+          <a class="forDansk" href="indexdk.html">Dansk</a>
+        </div>
+      </div>
+      <p>Our camps are here to teach the fundamentals of football whilst inspiring pupils to live a healthy lifestyle through the use of a football.</p>
+    </header>
+    <section>
+      <div class="fbImage"></div>
+      <div class="camPlane">
+        <h1>Camps plan</h1>
+        <p>Each camp roughly follows this schedule:</p>
+        <ul>
+          <li>Introduction to football</li>
+          <li>Basic Flick-up</li>
+          <li>Basics to Juggling</li>
+          <li>Spin Magic</li>
+        </ul>
+      </div>
+    </section>
+    <!-- for table -->
+    <table class="events">
+      <tr class="firstrow">
+        <th></th>
+        <th>Copenhagen</th>
+        <th>Roskilde</th>
+        <th>Aarhus</th>
+      </tr>
+      <tr>
+        <th>Introduction to football</th>
+        <td>Sun. 3 Jan 2021<br>3pm-5pm</td>
+        <td>Sat. 9 Jan 2021<br>3pm-5pm</td>
+        <td>Fri. 8 Jan 2021<br>3pm-5pm</td>
+      </tr>
+      <tr>
+        <th>Basic Flick-up</th>
+        <td>Sat. 9 Jan 2021<br>9am-11am</td>
+        <td rowspan="2" style="text-align: center;">Sun. 10 Jan 2021<br>9am-11am</td>
+        <td>Sun. 17 Jan 2021<br>9am-11am</td>
+      </tr>
+      <tr>
+        <th>Basics to Juggling</th>
+        <td>Sat. 17 Jan 2021<br>3pm-5pm</td>
+        <td>Fri. 16 Jan 2021<br>3pm-5pm</td>
+      </tr>
+      <tr>
+        <th>Spin Magic</th>
+        <td>Sun. 18 Jan 2021<br>3pm-5pm</td>
+        <td>Sun. 10 Jan 2021<br>3pm-5pm</td>
+        <td>Sun. 17 Jan 2021<br>3pm-5pm</td>
+      </tr>
+    </table>
+    <!-- for form -->
+    <div class="container">
+      <h1>Book Football Camps!</h1>
+      <p>If you would like to join Football Camps please fill out the form below. We aim to reply to all enquires within 24 hours.</p>
+      <form action="">
+        <div class="row">
+          <div class="col1">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="age">How old are you?</label>
+          </div>
+          <div class="col2">
+            <ol class="oneline">
+              <li><input type="radio" id="age" name="year" value="under12" checked> under 12</li>
+              <li><input type="radio" id="age" name="year" value="12 to 15">12 to 15</li>
+              <li><input type="radio" id="age" name="year" value="16 to 18">16 to 18</li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="email">Your email</label>
+          </div>
+          <div class="col2">
+            <input type="text" id="email" name="email" placeholder="Your email...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="phone">Phone number</label>
+          </div>
+          <div class="col2">
+            <input type="number" id="phone" name="phone" placeholder="Your phone number..." required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="city">Your closet city:</label>
+          </div>
+          <div class="col2">
+            <select name="city" id="city">
+              <option value="copenhagen">Copenhagen</option>
+              <option value="roskilde">Roskilde</option>
+              <option value="aarhus">Aarhus</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="pickdate">Request Appointment Date & Time</label>
+          </div>
+          <div class="col2">
+            <input type="datetime-local" id="pickdate" name="pickdate" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <label for="message">Your Message</label>
+          </div>
+          <div class="col2">
+            <textarea name="message" id="message" placeholder="Write something..." style="height: 200px;"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+        <h3 class="se-dig">We look forward to seeing you at this year's coolest camp!</h3>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
